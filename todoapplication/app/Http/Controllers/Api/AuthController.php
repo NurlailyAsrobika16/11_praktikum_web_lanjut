@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class AuthController extends Controller
 {
    use ApiResponse;
-}
+
 
 public function register(RegisterRequest $request)
 {
@@ -43,4 +43,4 @@ public function login(LoginRequest $request)
         'token_type' => 'Bearer',
         'user' => $user,
     ]);
-}
+}}
